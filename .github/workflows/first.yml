@@ -1,0 +1,14 @@
+name: first work flow
+on:
+  push: 
+jobs:
+  build:
+   runs-on: 
+   steps:
+     - name: checkout repository
+       uses: action/checkout@v4
+     - name: print welcome
+       run: echo "welcome to build"
+     - name: print present working directory
+       run: pwd
+  
